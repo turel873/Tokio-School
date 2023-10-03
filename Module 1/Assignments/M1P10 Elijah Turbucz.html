@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 10</title>
+</head>
+<body>
+    <form action="https://httpbin.org/post" method="post" name="registrationform" enctype="application/x-www-form-urlencoded">
+        <fieldset>
+            <legend>Datos personales:</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br>
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos"><br>
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono"><br>
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion"><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Seleccionar curso:</legend>
+            <label for="curso_front_end"></label>
+            <input type="checkbox" id="curso_front_end" name="curso_front_end" value="curso_front_end">Curso Front End<br>
+            <label for="curso_de_java"></label>
+            <input type="checkbox" name="curso_de_java" id="curso_de_java" value="curso_de_java">Curso de Java<br>
+            <label for="curso_full_stack"></label>
+            <input type="checkbox" id="curso_full_stack" name="curso_full_stack" value="curso_full_stack">Curso Full Stack<br>
+        </fieldset>
+        <input type="submit" name="submit" value="Submit">
+        <input type="reset" name="cancel" value="Cancel">
+    </form>
+</body>
+</html>
