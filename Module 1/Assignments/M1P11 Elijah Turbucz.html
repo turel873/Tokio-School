@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 11</title>
+</head>
+<body>
+    <form action="https://httpbin.org/post" method="post" name="registrationform" enctype="application/x-www-form-urlencoded">
+        <fieldset>
+            <legend>Registro de usuarios:</legend>
+            <label for="nombre">Nombre: </label>
+            <input type="text" id="nombre" name="nombre" required><br>
+            <label for="genero">Género: </label>
+            <input type="radio" name="male" id="genero">Male
+            <input type="radio" name="female" id="genero">Female<br>
+            <label for="fecha_de_nacimiento">Fecha de Nacimiento: </label>
+            <input type="date" name="fecha_de_nacimiento" id="fecha_de_nacimiento"><br>
+            <label for="email">Email: </label>
+            <input type="email" name="email" id="email" required><br>
+            <label for="contrasena">Contraseña: </label>
+            <input type="password" name="contrasena" id="contrasena" required><br>
+            <label for="numero_de_asignaturas_matriculadas">Número de asignaturas matriculadas: </label>
+            <input type="number" name="numero_de_asignaturas_matriculadas" id="numero_de_asignaturas_matriculadas" min="1" max="15"><br>
+            <label for="curso_matriculado">Curso Matriculado: </label>
+            <select id="curso_matriculado">
+                <option value="option1">Maths</option>
+                <option value="option2">English</option>
+                <option value="option3">Biology</option>
+                <option value="option4">Chemistry</option>
+                <option value="option5">IT</option>
+            </select><br>
+            <label for="tyc">Accept the Terms and Conditions: </label>
+            <input type="checkbox" name="yes" id="tyc" value="yes">Yes
+            <input type="checkbox" name="no" id="tyc" value="no">No<br>
+        </fieldset>
+        <input type="submit" name="submit" value="Submit">
+        <input type="reset" name="cancel" value="Cancel">
+    </form>
+</body>
+</html>
