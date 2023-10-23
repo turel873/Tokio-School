@@ -1,0 +1,37 @@
+header {
+    text-align: center;
+    color: gray;
+    font-family:'Courier New', Courier, monospace;
+    font-size: x-large;
+}
+
+.content {
+    margin-left: 8%;
+    margin-right: 5%;
+    margin-top: 30pt;
+}
+
+#article1 {
+    font-size: 16px;
+    text-align: justify;
+    color: blue;
+}
+
+#article2 {
+    font-size: 12px;
+    font-weight: bold;
+    font-style: italic;
+    color: green;
+}
+
+nav ul {
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
